@@ -32,6 +32,25 @@
 <!-- ======= Modal========= -->
 
 
+<div id="simpleModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">Disclaimer</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button> -->
+          </div>
+          <div class="modal-body">
+            The Emmetropia Verifying Optical (EVO) formula intraocular lens (IOL) calculators (toric/non-toric) assist in the selection of IOL power for cataract surgery. They should be used in conjunction with comprehensive ophthalmological examination and diagnostic tests. The user must arrive at his or her own decision in IOL power selection and is solely responsible for the treatment of his or her patient. The information provided is without warranty of any kind, expressed or implied. It is not meant to serve as medical or surgical instruction. The user assumes all risks and responsibilities when using the calculator(s) for IOL power selection. Dr Tun Kuan Yeo, or anyone connected to the website is not liable for any damages arising from the use of information provided, and the user assumes the entire costs of any damages, direct or indirect, arising from the use of the calculator(s). Copyright of all contents of this website is held by Dr Tun Kuan Yeo and its material may not be used, reproduced or copied without prior consent. The EVO formula IOL calculator is based on intellectual property of Dr Tun Kuan Yeo and the user may not copy, reproduce, disassemble or decompile the calculator.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="CloseBootstrapPopup()">I agree</button>
+          </div>
+      </div>
+  </div>
+</div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -631,6 +650,24 @@ Note: The EVO IOL calculator is solely intended for use with a pseudophakic IOL 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- modal script -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    window.onload = function () {
+        OpenBootstrapPopup();
+    };
+    function OpenBootstrapPopup() {
+        $("#simpleModal").modal('show');
+    }
+    function CloseBootstrapPopup() {
+      $("#simpleModal").modal('hide')
+    }
+</script>
+
+
   
 </body>
 
